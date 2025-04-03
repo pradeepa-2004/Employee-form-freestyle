@@ -11,7 +11,7 @@ pipeline
             {
                 steps
                 {
-                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url:'https://github.com/pradeepa-2004/Employee-form-freestyle';]])
+                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url:'https://github.com/pradeepa-2004/Employee-form-freestyle']])
                     bat 'mvn clean install'
                 } 
             }
